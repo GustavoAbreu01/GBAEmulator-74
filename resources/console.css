@@ -43,11 +43,17 @@ section {
 	text-align: center;
 }
 
-ul, ol, #registers, #savestates {
+ul,
+ol,
+#registers,
+#savestates {
 	padding: 10px;
 }
 
-#devtools, #registers, #savestates, #display {
+#devtools,
+#registers,
+#savestates,
+#display {
 	-webkit-box-orient: vertical;
 	-moz-box-orient: vertical;
 }
@@ -88,7 +94,7 @@ ul, ol, #registers, #savestates {
 	border-left: 1px solid #DADDE1;
 }
 
-#savestates ol > li {
+#savestates ol>li {
 	display: inline;
 }
 
@@ -103,12 +109,12 @@ ul, ol, #registers, #savestates {
 	-moz-box-orient: horizontal;
 }
 
-#psr > * {
+#psr>* {
 	display: block;
 	padding: 2px 10px;
 }
 
-#psr > *:last-child {
+#psr>*:last-child {
 	-webkit-box-flex: 1;
 	-moz-box-flex: 1;
 	text-align: right;
@@ -119,17 +125,18 @@ ul, ol, #registers, #savestates {
 	width: 80px;
 }
 
-#registers ol, #savestates ol {
+#registers ol,
+#savestates ol {
 	border: 1px solid #DADDE1;
 	padding: 8px;
 }
 
-#registers ol > li {
+#registers ol>li {
 	margin: 3px;
 	line-height: 16px;
 }
 
-#gprs > li {
+#gprs>li {
 	display: inline;
 }
 
@@ -188,7 +195,7 @@ ul, ol, #registers, #savestates {
 	padding: 0;
 }
 
-#memoryControls ul > li {
+#memoryControls ul>li {
 	float: left;
 	margin-left: 16px;
 }

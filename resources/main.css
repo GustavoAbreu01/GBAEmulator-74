@@ -1,6 +1,19 @@
+:root {
+
+	--platinum: #E5E4E2;
+	--alabaster: #E8EDDF;
+	--african-violet: #9C89B8;
+	--eerie-black: #242423;
+	--jet: #333533;
+
+	--black: #000000;
+	--correct: #8fc75b;
+	--incorrect: #D21F3C;
+	--present: #2c2c2c;
+}
+
 body {
-	background: url('bg.png') no-repeat top center, -webkit-linear-gradient(#765490 560px, #6A4883 620px, #433061 900px);
-	background: url('bg.png') no-repeat top center, -moz-linear-gradient(#765490 560px, #6A4883 620px, #433061 900px, #433061);
+	background-color: #242423;
 	text-align: center;
 	margin: 0 0 15px;
 	color: white;
@@ -14,13 +27,14 @@ button {
 }
 
 #screen {
-	margin-top: 85px;
+	margin-top: 115px;
 	margin-bottom: 150px;
 }
 
 #screen[width="240"] {
 	margin-top: 42.5px;
-	margin-bottom: -363px; /* Take up no height */
+	margin-bottom: -363px;
+	/* Take up no height */
 	image-rendering: -webkit-optimize-contrast;
 	image-rendering: -moz-crisp-edges;
 	image-rendering: -o-crisp-edges;
@@ -55,7 +69,7 @@ button {
 	background-color: #765490;
 }
 
-#controls > div {
+#controls>div {
 	margin-top: 30px;
 	-moz-transform-origin: 50% 0;
 	-moz-transform: rotateX(0deg);
@@ -85,22 +99,25 @@ button {
 	margin: 0 0 20px;
 }
 
-label, #sound, #controls > div > p {
+label,
+#sound,
+#controls>div>p {
 	display: block;
 	margin: 5px 30px;
 	height: 18px;
 }
 
-label, #sound {
+label,
+#sound {
 	float: left;
 	clear: left;
 }
 
-#sound + p {
+#sound+p {
 	margin-top: -23px !important;
 }
 
-#controls > div > p {
+#controls>div>p {
 	float: right;
 	clear: right;
 }
@@ -133,7 +150,8 @@ p:first-child {
 	margin-top: 0;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
 	color: #fcb3f0;
 }
 
@@ -170,7 +188,8 @@ p {
 	margin: 0;
 }
 
-label p, #sound p {
+label p,
+#sound p {
 	display: inline;
 }
 
@@ -188,4 +207,29 @@ ul#links li {
 ul#links li:not(:first-child)::before {
 	content: "•";
 	margin: 0 0.5em;
+}
+
+.container_screen_detail {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+}
+
+.screen_detail {
+	position: absolute;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;	width: 680px;
+	height: 440px;
+	background-color: #433061;
+	border-radius: 10px;
+}
+
+.screen_game {
+	border-radius: 10px;
+	background-color: #000000;
 }
